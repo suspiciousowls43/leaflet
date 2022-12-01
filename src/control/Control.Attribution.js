@@ -20,11 +20,7 @@ export const Attribution = Control.extend({
 		// @option position: String = 'bottomright'
 		// The position of the control (one of the map corners). Possible values are `'topleft'`,
 		// `'topright'`, `'bottomleft'` or `'bottomright'`
-		position: 'bottomright',
-
-		// @option prefix: String|false = 'Leaflet'
-		// The HTML text shown before the attributions. Pass `false` to disable.
-		prefix: 'false'
+		position: 'bottomright'
 	},
 
 	initialize(options) {

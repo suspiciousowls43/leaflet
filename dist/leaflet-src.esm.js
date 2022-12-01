@@ -1,5 +1,5 @@
 /* @preserve
- * Leaflet 1.9.3+main.5bc07d5, a JS library for interactive maps. https://leafletjs.com
+ * Leaflet 1.9.3+main.65fc3a6, a JS library for interactive maps. https://leafletjs.com
  * (c) 2010-2022 Volodymyr Agafonkin, (c) 2010-2011 CloudMade
  */
 
@@ -5547,11 +5547,7 @@ const Attribution = Control.extend({
 		// @option position: String = 'bottomright'
 		// The position of the control (one of the map corners). Possible values are `'topleft'`,
 		// `'topright'`, `'bottomleft'` or `'bottomright'`
-		position: 'bottomright',
-
-		// @option prefix: String|false = 'Leaflet'
-		// The HTML text shown before the attributions. Pass `false` to disable.
-		prefix: 'false'
+		position: 'bottomright'
 	},
 
 	initialize(options) {
