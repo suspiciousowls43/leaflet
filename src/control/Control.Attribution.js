@@ -4,10 +4,6 @@ import {Map} from '../map/Map';
 import * as Util from '../core/Util';
 import * as DomEvent from '../dom/DomEvent';
 import * as DomUtil from '../dom/DomUtil';
-import Browser from '../core/Browser';
-
-const russianFlag = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" class="leaflet-attribution-flag"><path fill="#ffffff" d="M0 0h12v3H0z"/><path fill="#0000ff" d="M0 3h12v3H0z"/><path fill="#ff0000" d="M0 6h12v3H0z"/></svg>';
-
 
 /*
  * @class Control.Attribution
@@ -24,11 +20,7 @@ export const Attribution = Control.extend({
 		// @option position: String = 'bottomright'
 		// The position of the control (one of the map corners). Possible values are `'topleft'`,
 		// `'topright'`, `'bottomleft'` or `'bottomright'`
-		position: 'bottomright',
-
-		// @option prefix: String|false = 'Leaflet'
-		// The HTML text shown before the attributions. Pass `false` to disable.
-		prefix: `<a href="https://leafletjs.com" title="A JavaScript library for interactive maps">${Browser.inlineSvg ? `${russianFlag} ` : ''}Leaflet</a>`
+		position: 'bottomright'
 	},
 
 	initialize(options) {

@@ -1,5 +1,5 @@
 /* @preserve
- * Leaflet 1.9.3+main.59cd3ec, a JS library for interactive maps. https://leafletjs.com
+ * Leaflet 1.9.3+main.1c557b1, a JS library for interactive maps. https://leafletjs.com
  * (c) 2010-2022 Volodymyr Agafonkin, (c) 2010-2011 CloudMade
  */
 
@@ -5532,9 +5532,6 @@ const scale = function (options) {
 	return new Scale(options);
 };
 
-const russianFlag = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" class="leaflet-attribution-flag"><path fill="#ffffff" d="M0 0h12v3H0z"/><path fill="#0000ff" d="M0 3h12v3H0z"/><path fill="#ff0000" d="M0 6h12v3H0z"/></svg>';
-
-
 /*
  * @class Control.Attribution
  * @aka L.Control.Attribution
@@ -5550,11 +5547,7 @@ const Attribution = Control.extend({
 		// @option position: String = 'bottomright'
 		// The position of the control (one of the map corners). Possible values are `'topleft'`,
 		// `'topright'`, `'bottomleft'` or `'bottomright'`
-		position: 'bottomright',
-
-		// @option prefix: String|false = 'Leaflet'
-		// The HTML text shown before the attributions. Pass `false` to disable.
-		prefix: `<a href="https://leafletjs.com" title="A JavaScript library for interactive maps">${Browser.inlineSvg ? `${russianFlag} ` : ''}Leaflet</a>`
+		position: 'bottomright'
 	},
 
 	initialize(options) {
